@@ -15,7 +15,7 @@ function App() {
         <h1>Dogspotting the Best</h1>
       </div>
       <div id="actionDiv">
-        <button>Sign Up</button>
+        <button onClick={getDog}>Sign Up</button>
         <button>Get a New Dog</button>
       </div>
       <div id="faqDiv">
@@ -27,6 +27,10 @@ function App() {
 }
 
 export default App;
+
+
+//https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
+
 
 
 /* const data = { username: 'example' };
