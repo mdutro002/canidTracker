@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import heroDog from './dogfrisbee2.jpg';
 import dogDiv from './dogdisplay.js';
@@ -6,6 +6,8 @@ import dogDiv from './dogdisplay.js';
 function getDog() {
   //fetch from dogAPI
 }
+
+//render App as component
 
 function App() {
   return (
