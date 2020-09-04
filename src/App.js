@@ -14,17 +14,17 @@ class App extends Component {
 componentDidMount(){
   fetch('https://api.thedogapi.com/v1/images/search?limit=10')
   .then(response => {
-    if (!response.ok){
-      console.log('error - see data');
+    if (!response.ok) {
+      throw Error("Error fetching! Throw more balls plz");
     }
     return response.json()
-  .then(data => {
+    .then(data => {
       this.setState({photos: data});
-    }).catch(err => {
-      console.log(err.message);
-    });
-  }
-  );
+    })
+    .catch(err => {
+      throw Error(err.message);
+    })
+  })
 }
 
   render() {
