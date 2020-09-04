@@ -2,7 +2,7 @@
 
 
 ## Description
-As you may have deduced from the title, this is a webapp that allows users to track and view images of the dogs they've seen in real life. 
+As you may have deduced from the title, this is a webapp that allows users to track and view images of the dogs they've seen in real life. -- CURRENTLY IN DEVELOPMENT
 
 ## Technologies
 * PERN stack: (Postgresql, Express, React, Node)
