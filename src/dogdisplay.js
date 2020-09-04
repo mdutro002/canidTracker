@@ -1,8 +1,14 @@
 import React from 'react';
+import Photo from './photo'
 
-const DogDiv = () => {
+const DogDiv = (props) => {
+  const displayDogs = () => {
+    return props.photos.map(photo => {
+      return <Photo url={photo.url}/>;
+    });
+  }
   return <>
-  <p>This is where the dogs go</p>
+<section>{displayDogs()}</section>
   </>
 }
 
