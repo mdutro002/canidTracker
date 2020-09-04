@@ -9,9 +9,18 @@ function getDog() {
 
 //render App as component
 
-function App() {
-  return (
-    <div className="mainDiv">
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      photos: []
+    };
+  }
+  
+  componentDidMount(){}
+  
+  render () {
+   return ( <div className="mainDiv">
       <div className="heroDiv">
         <img src={heroDog} alt="dog jumping and catching frisbee"></img>
         <h1>Dogspotting the Best</h1>
@@ -20,12 +29,13 @@ function App() {
         <button onClick={getDog}>Sign Up</button>
         <button>Get a New Dog</button>
       </div>
-      <div id="faqDiv">
-        {/* This is where FAQ's go */}
+        <div id="faqDiv">
+          {/* This is where FAQ's go */}
+        </div>
+        {dogDiv}
       </div>
-      {dogDiv}
-    </div>
-  );
+    );
+ }
 }
 
 export default App;
