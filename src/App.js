@@ -11,8 +11,8 @@ class App extends Component {
     };
   }
 
-componentDidMount(){
-  fetch('https://api.thedogapi.com/v1/images/search?limit=10')
+getDog = (event) => {
+  fetch('https://api.thedogapi.com/v1/images/search?limit=1')
   .then(response => {
     if (!response.ok) {
       throw Error("Error fetching! Throw more balls plz");
@@ -27,14 +27,18 @@ componentDidMount(){
   })
 }
 
+componentDidMount(){
+  this.getDog();
+}
+
   render() {
    return ( <div className="mainDiv">
       <div className="heroDiv">
         <img src={heroDog} alt="dog jumping and catching frisbee"></img>
-        <h1>Dogspotting the Best</h1>
+        <h1>dogspotting</h1>
       </div>
       <div id="actionDiv">
-        <button>Get a New Dog</button>
+        <button onClick={this.getDog}>Get a New Dog</button>
       </div>
         <DogDiv photos={this.state.photos} />
       </div>

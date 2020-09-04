@@ -1,4 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+
 .App {
   text-align: center;
+  justify-content: center;
 }
 
+.heroDiv{
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightskyblue;
+  font-family: 'Lemon', sans-serif;
+}
+
+.heroDiv h1{
+  position: absolute;
+  right: 30px; 
+  bottom: 315px;
+  color: white;
+}
+
+.heroDiv img{
+  width: 100%;
+}
+
+.dogPhoto {
+  max-width: 30%;
+}
