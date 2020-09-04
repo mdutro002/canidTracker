@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import heroDog from './dogfrisbee2.jpg';
-import dogDiv from './dogdisplay.js';
+import DogDiv from './dogdisplay';
 
 class App extends Component {
   constructor() {
@@ -34,13 +34,9 @@ componentDidMount(){
         <h1>Dogspotting the Best</h1>
       </div>
       <div id="actionDiv">
-        <button onClick={this.getDog}>Sign Up</button>
         <button>Get a New Dog</button>
       </div>
-        <div id="faqDiv">
-          {/* This is where FAQ's go */}
-        </div>
-        {dogDiv}
+        <DogDiv photos={this.state.photos} />
       </div>
     );
  }

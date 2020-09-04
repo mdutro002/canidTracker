@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class dogDiv extends Component{
-  render(){
-    return <div>
-      <img id="" src=""></img>
-    </div>
-  }
+const DogDiv = () => {
+  return <>
+  <p>This is where the dogs go</p>
+  </>
 }
 
-export default dogDiv;
+export default DogDiv;
